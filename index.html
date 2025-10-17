@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festus Okagbare | Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header>
+        <h2 data-testid="test-user-name">Festus Okagbare</h2>
+      </header>
+
+      <figure class="avatar">
+        <img
+          src="festus.jpg"
+          alt="Festus Okagbare smiling"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <section class="bio">
+        <p data-testid="test-user-bio">
+          I'm a passionate DevOps/Cloud Engineer and a software developer skilled in Cloud infrastructures, deployments, automations,  backend and frontend
+          technologies. I enjoy solving problems and creating impactful digital
+          experiences.
+        </p>
+      </section>
+
+      <p data-testid="test-user-time" class="time"></p>
+
+      <nav data-testid="test-user-social-links" class="social-links">
+        <ul>
+          <li>
+            <a
+              href="https://x.com/festusokotieboh"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+            >
+              X (Twitter)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/festus-okagbare"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="hobbies" data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Coding</li>
+          <li>Traveling</li>
+          <li>Music</li>
+        </ul>
+      </section>
+
+      <section class="dislikes" data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Procrastination</li>
+          <li>Noise</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
