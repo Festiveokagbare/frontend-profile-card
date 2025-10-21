@@ -1,0 +1,603 @@
+/* ----------------------------
+   Bio Section Styling - Professional & Colorful
+------------------------------- */
+section.bio {
+  background: #f0f8ff; /* soft light blue background */
+  padding: 25px 30px;
+  border-left: 6px solid #0077ff; /* nice blue accent on left */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* left aligned */
+}
+
+section.bio:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+section.bio p[data-testid="test-user-bio"] {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1a1a1a; /* dark text for professionalism */
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Optional: highlight key words */
+section.bio p[data-testid="test-user-bio"] strong {
+  color: #0077ff; /* accent color for emphasis */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section.bio {
+    padding: 20px 20px;
+  }
+
+  section.bio p[data-testid="test-user-bio"] {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section.bio {
+    padding: 15px 15px;
+  }
+
+  section.bio p[data-testid="test-user-bio"] {
+    font-size: 0.9rem;
+  }
+}
+
+/* ----------------------------
+   Global Reset
+------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e6ebf1; /* soft professional background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ----------------------------
+   Profile Card
+------------------------------- */
+.profile-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar */
+.avatar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem 0;
+  border: 3px solid #0077ff;
+  transition: transform 0.3s ease;
+}
+
+.avatar img:hover {
+  transform: scale(1.05);
+}
+
+/* Name */
+h2 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: #0077ff;
+}
+
+/* Bio */
+.bio p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Time / Position */
+.time {
+  font-weight: bold;
+  color: #0077ff;
+  margin-bottom: 1rem;
+}
+
+/* Social Links */
+.social-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #0077ff;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  color: #0055cc;
+  transform: translateY(-2px);
+}
+
+/* Section Lists */
+section h3 {
+  margin-top: 1rem;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+section ul {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
+
+section ul li {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ----------------------------
+   Forms (Contact / About Me)
+------------------------------- */
+form div {
+  margin-bottom: 1em;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  min-height: 1.2em;
+}
+
+.success {
+  color: green;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6em 0.8em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 8px rgba(0, 119, 255, 0.2);
+}
+
+button {
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0055cc, #0077ff);
+  transform: translateY(-2px);
+}
+
+/* ----------------------------
+   Responsive Adjustments
+------------------------------- */
+@media (min-width: 600px) {
+  .profile-card {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  section h3 {
+    font-size: 1.1rem;
+  }
+
+  section ul li,
+  .bio p {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* ----------------------------
+   About Page Styling with Hover Effect
+------------------------------- */
+
+main[data-testid="test-about-page"] {
+  max-width: 800px;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 40px auto;
+}
+
+/* Page Title */
+main[data-testid="test-about-page"] h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #000; /* default black */
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+main[data-testid="test-about-page"] h1:hover {
+  color: #0077ff; /* turns blue on hover */
+}
+
+/* Section Titles */
+main[data-testid="test-about-page"] h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #000; /* default black */
+  border-bottom: 2px solid #000; /* black border */
+  display: inline-block;
+  padding-bottom: 4px;
+  font-weight: 600;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+main[data-testid="test-about-page"] h2:hover {
+  color: #0077ff; /* turns blue on hover */
+  border-color: #0077ff; /* border turns blue */
+}
+
+/* Section Spacing */
+main[data-testid="test-about-page"] section {
+  margin-bottom: 25px;
+}
+
+/* Paragraph Styling */
+main[data-testid="test-about-page"] p {
+  font-size: 1rem;
+  color: #555;
+  background-color: #f0f8ff;
+  padding: 15px 20px;
+  border-left: 4px solid #000; /* black left border */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover Effect for Paragraphs */
+main[data-testid="test-about-page"] p:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 119, 255, 0.2);
+  border-color: #0077ff; /* left border turns blue on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  main[data-testid="test-about-page"] {
+    padding: 30px 20px;
+  }
+
+  main[data-testid="test-about-page"] h1 {
+    font-size: 1.9rem;
+  }
+
+  main[data-testid="test-about-page"] h2 {
+    font-size: 1.2rem;
+  }
+
+  main[data-testid="test-about-page"] p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main[data-testid="test-about-page"] {
+    padding: 20px 15px;
+  }
+
+  main[data-testid="test-about-page"] h1 {
+    font-size: 1.7rem;
+  }
+
+  main[data-testid="test-about-page"] h2 {
+    font-size: 1.1rem;
+  }
+
+  main[data-testid="test-about-page"] p {
+    font-size: 0.9rem;
+  }
+}
+
+.article-sections {
+  display: flex;
+  justify-content: center; /* centers both sections */
+  align-items: flex-start;
+  gap: 60px; /* reduced distance between them */
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.article-sections div {
+  flex: 1;
+  max-width: 220px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.article-sections div:hover {
+  background-color: #e8f2ff; /* subtle blue hover */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article-sections h3 {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 0.8rem;
+}
+
+.article-sections ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-sections ul li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.article-sections ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0077ff;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* responsive for smaller screens */
+@media (max-width: 768px) {
+  .article-sections {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .article-sections div {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+/* ----------------------------
+   Social Links - Professional Styling
+------------------------------- */
+.social-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  border: 2px solid #0077ff;       /* professional blue border */
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #ffffff;              /* white background */
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #0077ff;              /* blue background on hover */
+  color: #ffffff;                   /* white text on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.25);
+}
+
+h2 {
+  color: #b0b0b0 !important;  /* light grey */
+  transition: color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+h2:hover {
+  color: #3498db !important;  /* same blue hover */
+}
+
+/* --- Override About Page Section Titles --- */
+main[data-testid="test-about-page"] h2 {
+  color: #b0b0b0 !important;       /* light grey text */
+  border-bottom: 2px solid #b0b0b0 !important; /* matching grey underline */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+main[data-testid="test-about-page"] h2:hover {
+  color: #0077ff !important;       /* blue on hover */
+  border-color: #0077ff !important;
+}
+
+/* Optional: slightly darker background for page */
+main[data-testid="test-about-page"] {
+  background: #2f3640;  /* faint dark tone */
+  color: #e0e0e0;
+}
+
+/* --- Fix "About Me" title color --- */
+main[data-testid="test-about-page"] h1 {
+  color: #ffffff !important;     /* white text for About Me */
+  transition: color 0.3s ease;
+}
+
+main[data-testid="test-about-page"] h1:hover {
+  color: #0077ff !important;     /* keep blue hover */
+}
+
+
+/* ----------------------------
+   Dark/Light Mode Toggle Styling
+------------------------------- */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0077ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* ----------------------------
+   Dark Mode Styling
+------------------------------- */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #eaeaea;
+}
+
+body.dark-mode .profile-card {
+  background: #2a2a2a;
+  color: #eaeaea;
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .bio p {
+  color: #ccc;
+}
+
+body.dark-mode .social-links a {
+  border-color: #00b0ff;
+  color: #00b0ff;
+}
+
+body.dark-mode .social-links a:hover {
+  background: #00b0ff;
+  color: #fff;
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #f0f0f0;
+}
+

@@ -1,69 +1,80 @@
-)
-Profile Card Component
-
-Live Demo
-
-Live URL (to update after deployment):
- https://festiveokagbare.github.io/frontend-profile-card/
 
 
- Repository
+Festus Okagbare | Frontend Stage 1 Task
 
-GitHub Repository:
- https://github.com/Festiveokagbare/frontend-profile-card
+Description
+This project is part of the **HNG Frontend Stage 1 Task**, extending my Stage 0 profile card into a **multi-page responsive web application**.
 
-Overview
+The application showcases my professional profile with an **About Me** page and a **Contact Us** page featuring form validation and accessibility support.
 
-This project is a simple, accessible, and responsive Profile Card built using semantic HTML, modern CSS (Flexbox/Grid), and vanilla JavaScript.
-It is designed to meet the requirements of the HNG Stage 0 Frontend Task, with every visible element including the required data-testid attributes for automated testing.
+### Pages Included
 
- Features
+1. **Home Page (`index.html`)**
+   Displays a styled profile card with navigation links to the About and Contact pages, plus social media links.
 
-1. Semantic HTML structure (<article>, <section>, <figure>, etc.)
-2. Accessible and keyboard-navigable links
-3. Responsive layout for mobile, tablet, and desktop
-4. Displays current time in milliseconds using Date.now()
-5. Clean and modern CSS styling
-6. Social links open in a new tab (target="_blank")
+2. **About Me Page (`about.html`)**
+   A reflective page containing my biography, goals, challenges, notes to my future self, and extra thoughts. Built with semantic HTML elements and accessible structure.
 
- Required Elements
-Element	          Description	                Test ID
-Profile       Card	Root container	     test-profile-card
-Name	      User's name	             test-user-name
-Bio	          Short biography	         test-user-bio
-Time	      Current time in ms	     test-user-time
-Avatar	      User photo	             test-user-avatar
-Social Links  Container for social links	test-user-social-links
-Hobbies	      List of hobbies	            test-user-hobbies
-Dislikes	  List of dislikes	            test-user-dislikes
+3. **Contact Us Page (`contact.html`)**
+   A form page with proper validation rules for name, email, subject, and message fields. Validation ensures data integrity and user feedback through visible error and success messages.
 
-How to Run Locally
+Each page follows **semantic HTML**, **accessibility (A11y)** principles, and **responsive design** for smooth usability across devices.
 
-Clone this repository:
-git clone https://github.com/festiveokotieboh/frontend-profile-card.git
+---
 
-cd frontend-profile-card
+## Technologies Used
+- **HTML5** – Semantic and accessible page structure
+- **CSS3** – Styling, responsive layouts, and animations
+- **JavaScript (Vanilla JS)** – Form validation and interactivity
+- **Google Fonts** – Clean and modern typography
+- **GitHub Pages** – Hosting and live deployment
+
+---
+
+## Live Demo
+**Live Site:** [Click here to view the deployed project](https://your-live-link.netlify.app)
+**GitHub Repository:** [https://github.com/yourusername/frontend-stage1](https://github.com/yourusername/frontend-stage1)
 
 
-Open the project:
-Open index.html directly in your browser — no dependencies required.
+---
 
-(Optional)
-Use VS Code Live Server for real-time preview.
+## How to Run Locally
 
-Technologies Used
+Follow these simple steps to run the project locally on your system:
 
-1. HTML5
+### 1. Clone the Repository
+git clone https://github.com/yourusername/frontend-stage1.git
 
-2. CSS3 (Flexbox/Grid)
+2. Navigate to the Project Folder
+cd frontend-stage1
 
-3. Vanilla JavaScript
+3. Open in Browser
+You can open any of the pages directly in your browser:
+
+index.html → Home Page
+about.html → About Me Page
+contact.html → Contact Us Page
+
+Alternatively, open the folder in VS Code and use Live Server to preview dynamically.
+
+ ## Features Overview
+ Semantic and accessible HTML structure
+ Responsive CSS layout for mobile, tablet, and desktop
+ JavaScript-based client-side form validation
+ Clear error and success feedback messages
+ Smooth navigation between pages
+
+ ## Optional dark/light mode toggle on the homepage
 
 Author
-
 Festus Okagbare
-Frontend / DevOps / Cloud Engineer
-Email: festiveokotieboh@gmail.com
+DevOps & Full-Stack Engineer
+**LinkedIn:** https://www.linkedin.com/in/festus-okagbare/
+**X (Twitter):** https://x.com/festusokotieboh
 
-X (Twitter): @FestusOkotieboh
-LinkedIn: Festus Okagbare
+Submission Info
+Program: HNG Frontend Track
+Stage: 1
+Deadline: October 22, 2025 | 11:59 PM (WAT)
+
+This project demonstrates practical application of semantic HTML, accessibility standards, responsive design, and JavaScript form validation.

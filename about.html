@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Festus Okagbare</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #0f172a, #1e293b 70%);
+      color: #e2e8f0;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    main {
+      background: rgba(30, 41, 59, 0.95);
+      padding: 2rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 720px;
+      animation: fadeIn 1s ease forwards;
+      overflow-y: auto;
+      max-height: 90vh;
+      border: 1px solid #334155;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #60a5fa;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
+      border-bottom: 2px solid #334155;
+      padding-bottom: 0.6rem;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+      background: #1e293b;
+      padding: 1rem 1.3rem;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      transition: all 0.4s ease;
+    }
+
+    section:hover {
+      border-color: #60a5fa;
+      box-shadow: 0 0 12px rgba(96, 165, 250, 0.3);
+      transform: translateY(-4px);
+    }
+
+    /* changed heading color to grey */
+    h2 {
+      color: #94a3b8; /* grey tone */
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    h2::before {
+      content: '';
+      position: absolute;
+      left: -0.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 1.3rem;
+      background: #60a5fa;
+      border-radius: 4px;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 0.96rem;
+      line-height: 1.7;
+      text-align: justify;
+      margin: 0;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(90deg, #2563eb, #1d4ed8);
+      padding: 0.7rem 1.3rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .back-home:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #1d4ed8, #2563eb);
+      box-shadow: 0 0 12px rgba(96, 165, 250, 0.4);
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1.5rem;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main data-testid="test-about-page">
+    <h1>About Me</h1>
+
+    <section>
+      <h2>Bio</h2>
+      <p data-testid="test-about-bio">
+        I am Festus Okagbare, a passionate tech enthusiast and lifelong learner. I love exploring new technologies, building projects that solve real-world problems, and sharing knowledge with others. My journey in tech has been full of challenges, lessons, and growth, and I am excited to continue learning and evolving.
+      </p>
+    </section>
+
+    <section>
+      <h2>Goals in this Program</h2>
+      <p data-testid="test-about-goals">
+        My main goals in this program are to deepen my understanding of cloud computing, DevOps, and modern software practices, build practical projects to strengthen my skills, and prepare myself for a successful career in technology where I can make meaningful impact.
+      </p>
+    </section>
+
+    <section>
+      <h2>Areas of Low Confidence</h2>
+      <p data-testid="test-about-confidence">
+        I sometimes struggle with complex cloud infrastructure design and advanced algorithms. I also aim to improve my confidence in public speaking and presenting technical ideas clearly to non-technical audiences.
+      </p>
+    </section>
+
+    <section>
+      <h2>Note to Future Self</h2>
+      <p data-testid="test-about-future-note">
+        Keep pushing boundaries and stay curious. Remember the hard work, late nights, and sacrifices that brought you here. Never stop learning, and always use your skills to help others and make a positive impact in the world.
+      </p>
+    </section>
+
+    <section>
+      <h2>Extra Thoughts</h2>
+      <p data-testid="test-about-extra">
+        Every challenge is an opportunity to grow. Stay patient with yourself, celebrate small wins, and remember that consistency beats intensity. Your future self will thank you for the persistence you show today.
+      </p>
+    </section>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+  </main>
+</body>
+</html>
