@@ -32,8 +32,8 @@ Each page follows **semantic HTML**, **accessibility (A11y)** principles, and **
 ---
 
 ## Live Demo
-**Live Site:** [Click here to view the deployed project](https://your-live-link.netlify.app)
-**GitHub Repository:** [https://github.com/yourusername/frontend-stage1](https://github.com/yourusername/frontend-stage1)
+**Live Site:** https://festiveokagbare.github.io/frontend-profile-card/
+**GitHub Repository:** https://github.com/Festiveokagbare/frontend-profile-card
 
 
 ---
